@@ -7,9 +7,14 @@
     src: url(FulboTano-d9ABZ.otf);
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     color: white;
     font-family: item,sans-serif;
+    font-size: 18px;
 }
 
 .top {
@@ -34,6 +39,7 @@ body{
 }
 
 #title{
+    margin-left: 29.5em;
     margin-top: -2em;
 }
 
@@ -64,7 +70,14 @@ body{
     height: 34.968em;
 }
 
-table{
+#info{
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    width: auto;
+}
+
+#head{
     color: white;
     font-size: 18px;
     margin: auto;
@@ -83,17 +96,78 @@ table{
     height: 10em;
 }
 
-#subcats{
+#cats{
     padding-left: 4em;
     padding-right: 4em;
 }
 
+#signin_btn{
+    font-size: 18px;
+    margin-top: 0.2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    display: inline-block;
+    position: absolute;
+}
+
+#subcats{
+    width: auto;
+    margin-left: 31em;
+}
+
 .subcats{
+    height: 2em;
     width: 101.25%;
     margin-left: -8px;
     background-color: #2e2e2e;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+#signdiv{
+    position: relative;
+    display: inline-block;
+}
+
+#catsdiv{
+    position: relative;
+    display: inline-block;
+
+}
+
+#categorybtn{
+    margin-top: 0.2em;
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    font-family: item, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#category_content{
+    margin-top: -0.3em;
+    display: none;
+}
+
+#category_content a {
+    padding: 1em;
+    background-color: #5e5e5e;
+    color: white;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+
+}
+
+#category_content a:hover {
+    background-color: #525252;
+}
+
+#catsdiv:hover #category_content {
+    display: block;
+
 }
 
 #item_space{
@@ -111,6 +185,7 @@ table{
     margin-left: 0.7em;
     margin-right: 0.7em;
     display: inline-block;
+    z-index: -1;
 }
 
 
@@ -119,13 +194,16 @@ table{
     background-color: #585858;
     width: 13em;
     height: 13em;
+    line-height: 13em;
 }
 
 .icon{
     border-top-left-radius: 8px;
-    border-top-right-radius:        8px;
-    width: 13em;
-    height: 13em;
+    border-top-right-radius: 8px;
+    width: 12em;
+    height: 12em;
+    border-radius: 8px;
+    vertical-align: middle;
 }
 
 .info{
@@ -162,7 +240,7 @@ table{
 #logup{
     background-color: #2e2e2e;
     width:25em;
-    height: 31.5em;
+    height: 31em;
     margin: auto;
     margin-top: 1.5em;
     border-radius: 8px;
@@ -246,10 +324,18 @@ a{
 
 #cart_item{
     background-color: #383838;
-    width: 85%;
+    width: 47em;
     height: 250px;
     border-radius: 8px;
     margin-top: 2em;
+}
+
+#cart_img_div{
+    background-color: #585858;
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
 #cart_img{
@@ -261,7 +347,7 @@ a{
 }
 
 #cart_info{
-    margin-left: 3em;
+    margin-left: 1em;
     display: inline-block;
 }
 
@@ -271,23 +357,85 @@ a{
 }
 
 #cart_price{
-    width: 500px;
+    width: 300px;
+}
+
+#qty{
+    width: 2em;
+    margin-left: 5px;
+}
+
+#totaldiv{
+    margin-top: 2em;
+    float: right;
+    border-radius: 8px;
+    background-color: #2e2e2e;
+    height: auto;
+    width: 15em;
+    margin-left: 2em;
+}
+
+#total_cart_table{
+    width: 100%
+}
+
+.item_in_cart{
+    position: absolute;
+    top: 5.5em;
+    width: 47em;
+    margin-left: -1em;
+}
+
+
+#bill_title{
+    margin-bottom: 0.1em;
+    background-color: #414141;
+    height: 2em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+#item_summary{
+    width: 14em;
+    margin-top: 0.1em;
+    background-color: #585858;
+    height: auto;
+    padding: 0.5em;
+    text-align: left;
+}
+
+#items_summary_td{
+    width: 9em;
+}
+
+#cost_total{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    background-color: #414141;
+    height: 2em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 1em;
+    padding-top: 1em;
 }
 
 #profile_name{
-    background-color: #383838;
-    height: 23em;
-    width: 90%;
+    margin: auto;
     margin-top: 1em;
-    border-radius: 8px;
+    padding-bottom: 1em;
     padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1em;
+    width: 51em;
+    border-radius: 8px;
+    background-color: #383838
 }
 
 #profile_title{
     background-color: #585858;
     height: 2em;
-    width: 102.3%;
+    width: 51.5em;
     margin-left: -1em;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -301,22 +449,20 @@ a{
     width: 120px;
     padding: 12px;
     border-radius: 16px;
-    margin-top: 2em;
+    margin-top: -2em;
 }
 
 #profile_img{
     height: 120px;
+    width: 120px;
+    border-radius: 8px;
+
 }
 
 #profile_info{
-    height: auto;
-}
-
-#info_table{
-    height: 12em;
-    width: 27em;
-    margin-left: 2em;
     margin-top: 2em;
+    margin-left: 5em;
+    height: auto;
 }
 
 #profile_table{
@@ -334,3 +480,82 @@ a{
     border-radius: 8px;
 }
 
+#order_id{
+    display: none;
+}
+
+#error{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#errordiv{
+    background-color: #2e2e2e;
+    width:25em;
+    height: 23em;
+    margin: auto;
+    margin-top: 1.5em;
+    border-radius: 8px;
+}
+
+#signup{
+    margin: auto;
+}
+
+#info_table{
+    height: 12em;
+    width: 27em;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.bill_td{
+    text-align: center;
+}
+
+.bill_td_2{
+    text-align: right;
+}
+
+.td_1{
+    width: 25em;
+    border-style: solid solid solid none;
+}
+
+.td_2{
+    width: 10em;
+    border-style: solid solid solid none;
+    margin-left: -4px;
+}
+
+.td_3{
+    width: 10em;
+    border-style: solid none solid none;
+    margin-left: -4px;
+}
+
+.td_4{
+    border-style: solid solid solid none;
+    margin-left: -4px;
+    color: #0f0f0f;
+    border-color: white;
+}
+
+#bill_table {
+    margin: auto;
+    height: 15em;
+}
+
+h1{
+    text-align: center;
+}
+
+#place{
+    border-radius: 8px;
+    padding: 0.5em;
+    width: 6.5em;
+    margin-top: 2em;
+    background-color: #2e2e2e;
+}
